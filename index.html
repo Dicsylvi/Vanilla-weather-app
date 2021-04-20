@@ -13,42 +13,51 @@
 
 <body>
   <div class="container">
-    <div class="weather-app">
-      <h1>
-        New Castle, DE, 19720
-      </h1>
-      <ul>
-        <li>
-          Monday 10:00
-        </li>
-        <li>
-          Clear with periodic clouds
-        </li>
-      </ul>
-      <div class="col-6">
-        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Clear" />
-        51℃ | ℉
+    <div class="weather-app-wrapper">
+      <div class="weather-app">
+        <div class="overview">
+          <h1>
+            New Castle, DE, 19720
+          </h1>
+          <ul>
+            <li>
+              Monday 10:00
+            </li>
+            <li>
+              Clear with periodic clouds
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="d-flex weather-temperature">
+              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Clear" class="float-left" />
+              <div class="float-left">
+                <strong>51</strong><span class="units">℃ | <a href="#">℉</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>
+                Precipitation: 2%
+              </li>
+              <li>
+                Humidity: 73%
+              </li>
+              <li>
+                Wind: 6 mph
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <ul>
-          <li>
-            Precipitation: 2%
-          </li>
-          <li>
-            Humidity: 73%
-          </li>
-          <li>
-            Wind: 6 mph
-          </li>
-        </ul>
-      </div>
+      <small>
+        <a href="https://github.com/Dicsylvi/Vanilla-weather-app" target="_blank">
+          Open-source code</a>,
+        by Sylvia Dickerson
+      </small>
     </div>
-  </div>
-  <small>
-    <a href="https://github.com/Dicsylvi/Vanilla-weather-app" target="_blank">
-      Open-source code</a>,
-    by Sylvia Dickerson
-  </small>
   </div>
   <script src="src/app.js"></script>
 </body>
